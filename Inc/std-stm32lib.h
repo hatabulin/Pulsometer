@@ -1,0 +1,12 @@
+ITStatus TIM_GetITStatus(TIM_TypeDef* TIMx, uint16_t TIM_IT);
+void TIM_ClearITPendingBit(TIM_TypeDef* TIMx, uint16_t TIM_IT);
+void TIM_ITConfig(TIM_TypeDef* TIMx, uint16_t TIM_IT, FunctionalState NewState);
+void ADC_TempSensorVrefintCmd(FunctionalState NewState);
+void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+void ADC_ResetCalibration(ADC_TypeDef* ADCx);
+FlagStatus ADC_GetCalibrationStatus(ADC_TypeDef* ADCx);
+FlagStatus ADC_GetResetCalibrationStatus(ADC_TypeDef* ADCx);
+void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+void TIM_ClearFlag(TIM_TypeDef* TIMx, uint16_t TIM_FLAG);
+void TIM_Cmd(TIM_TypeDef* TIMx, FunctionalState NewState);
